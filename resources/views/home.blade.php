@@ -26,17 +26,19 @@
           <table id="add-row" class="display table table-striped table-hover">
             <thead>
               <tr>
-                <th style="width: 20px; text-align: center;">No</th>
-                <th style="text-align: center;">Nama</th>
-                <th style="text-align: center;">Kategori</th>
-                <th style="text-align: center;">Berat</th>
+                <th style="width: 40px; text-align: center;">No</th>
+                <th style="text-align: center;">Jenis Sampah</th>
                 <th style="text-align: center;">Harga</th>
-                <th style="text-align: center;">Status</th>
-                <th style="width: 235px; text-align: center;">Aksi</th>
               </tr>
             </thead>
             <tbody>
-
+              @foreach($sampah as $sp)
+              <tr>
+                <td style="text-align: center;">{{ $no++ }}</td>
+                <td style="text-align: center;">{{ $sp->nama }}</td>
+                <td style="text-align: center;">Rp. {{ $sp->harga }}</td>
+              </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

@@ -9,11 +9,6 @@
 
   <div class="container mt-4">
     <div class="row">
-      <div class="card-body">
-        <div class="chart-container" style="height: 350px">
-          <canvas id="multipleLineChart"></canvas>
-        </div>
-      </div>
     </div>
     <div class="card">
       <div class="card-header">

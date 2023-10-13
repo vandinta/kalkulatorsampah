@@ -14,12 +14,6 @@ class DashboardController extends Controller
         $no = 1;
         $sampah = Sampah::all();
         $transaksi = Transaksi::all();
-
-        // $usersChart = new UserChart;
-        // $usersChart->labels(['Jan', 'Feb', 'Mar']);
-        // $usersChart->dataset('Users by trimester', 'line', [10, 25, 13]);
-        // return view('users', [ 'usersChart' => $usersChart ] );
-
         return view('home', compact('no', 'transaksi', 'sampah'));
     }
 
